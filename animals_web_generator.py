@@ -9,21 +9,25 @@ def load_data(file_path):
 
 def serialize_animal(animal):
     """Serializes the animal data"""
-    output = ""
+    output = "<li class=\"cards__item\">\n"
     animal_name = animal.get("name")
-    animal_location = animal.get("locations")[0]
-    animal_diet = animal.get("characteristics", {}).get("diet")
-    animal_type = animal.get("characteristics", {}).get("type")
-    output += "<li class=\"cards__item\">\n"
     if animal_name is not None:
         output += f"\t<div class=\"card__title\">{animal_name}</div>\n"
     output += "\t<p class=\"card__text\">\n"
-    if animal_diet is not None:
-        output += f"\t\t<strong>Diet:</strong> {animal_diet}<br/>\n"
-    if animal_location is not None:
-        output += f"\t\t<strong>Location:</strong> {animal_location}<br/>\n"
-    if animal_type is not None:
-        output += f"\t\t<strong>Type:</strong> {animal_type}<br/>\n"
+
+    animal_features = {
+        "Location": animal.get("locations")[0],
+        "Diet": animal.get("characteristics", {}).get("diet"),
+        "Type": animal.get("characteristics", {}).get("type"),
+        "Lifespan": animal.get("characteristics", {}).get("lifespan"),
+        "Top speed": animal.get("characteristics", {}).get("top_speed"),
+        "Skin type": animal.get("characteristics", {}).get("skin_type"),
+    }
+
+    for feature, info in animal_features.items():
+        if info is not None:
+            output += f"\t\t<strong>{feature}:</strong> {info}<br/>\n"
+
     output += "\t</p>\n"
     output += "</li>"
     output += "\n"
