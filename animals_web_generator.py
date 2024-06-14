@@ -13,7 +13,8 @@ def serialize_animal(animal):
     animal_name = animal.get("name")
     if animal_name is not None:
         output += f"\t<div class=\"card__title\">{animal_name}</div>\n"
-    output += "\t<p class=\"card__text\">\n"
+    output += "\t<p>\n"
+    output += f"\t\t<ul>\n"
 
     animal_features = {
         "Location": animal.get("locations")[0],
@@ -26,8 +27,9 @@ def serialize_animal(animal):
 
     for feature, info in animal_features.items():
         if info is not None:
-            output += f"\t\t<strong>{feature}:</strong> {info}<br/>\n"
+            output += f"\t\t\t<li><span class=\"field__name\">{feature}:</span> {info}</li>\n"
 
+    output += f"\t\t</ul>\n"
     output += "\t</p>\n"
     output += "</li>"
     output += "\n"

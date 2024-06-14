@@ -19,6 +19,16 @@
             font-weight: normal;
         }
 
+        ul {
+            list-style: None;
+            margin: 0;
+            padding: 0;
+            flex: 1 1 auto;
+          	font-size: 0.95rem;
+          	line-height: 2;
+          	margin-bottom: 1.25rem;
+        }
+
         body {
           font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
           font-style: normal;
@@ -56,12 +66,10 @@
           text-transform: uppercase;
         }
 
-        .card__text {
-          flex: 1 1 auto;
-          font-size: 0.95rem;
-          line-height: 2;
-          margin-bottom: 1.25rem;
+        .field__name {
+            font-weight: bold;
         }
+
         </style>
     </head>
     <body>
@@ -69,194 +77,232 @@
         <ul class="cards">
             <li class="cards__item">
 	<div class="card__title">American Foxhound</div>
-	<p class="card__text">
-		<strong>Location:</strong> North-America<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Type:</strong> Hound<br/>
-		<strong>Lifespan:</strong> 10 to 12 years<br/>
-		<strong>Skin type:</strong> Hair<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> North-America</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Type:</span> Hound</li>
+			<li><span class="field__name">Lifespan:</span> 10 to 12 years</li>
+			<li><span class="field__name">Skin type:</span> Hair</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Arctic Fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> Eurasia<br/>
-		<strong>Diet:</strong> Carnivore<br/>
-		<strong>Type:</strong> Mammal<br/>
-		<strong>Lifespan:</strong> 7 - 10 years<br/>
-		<strong>Top speed:</strong> 30 mph<br/>
-		<strong>Skin type:</strong> Fur<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Eurasia</li>
+			<li><span class="field__name">Diet:</span> Carnivore</li>
+			<li><span class="field__name">Type:</span> Mammal</li>
+			<li><span class="field__name">Lifespan:</span> 7 - 10 years</li>
+			<li><span class="field__name">Top speed:</span> 30 mph</li>
+			<li><span class="field__name">Skin type:</span> Fur</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Cross Fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> North-America<br/>
-		<strong>Diet:</strong> Carnivore<br/>
-		<strong>Type:</strong> mammal<br/>
-		<strong>Lifespan:</strong> 10 to 15 years in captivity, seven years in the wild<br/>
-		<strong>Top speed:</strong> 31 mph<br/>
-		<strong>Skin type:</strong> Fur<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> North-America</li>
+			<li><span class="field__name">Diet:</span> Carnivore</li>
+			<li><span class="field__name">Type:</span> mammal</li>
+			<li><span class="field__name">Lifespan:</span> 10 to 15 years in captivity, seven years in the wild</li>
+			<li><span class="field__name">Top speed:</span> 31 mph</li>
+			<li><span class="field__name">Skin type:</span> Fur</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Darwin’s fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> South-America<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Type:</strong> Mammal<br/>
-		<strong>Lifespan:</strong> Seven years<br/>
-		<strong>Top speed:</strong> 45 mph<br/>
-		<strong>Skin type:</strong> Fur<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> South-America</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Type:</span> Mammal</li>
+			<li><span class="field__name">Lifespan:</span> Seven years</li>
+			<li><span class="field__name">Top speed:</span> 45 mph</li>
+			<li><span class="field__name">Skin type:</span> Fur</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">English Foxhound</div>
-	<p class="card__text">
-		<strong>Location:</strong> Europe<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Lifespan:</strong> 10 to 13 years<br/>
-		<strong>Skin type:</strong> Hair<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Europe</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Lifespan:</span> 10 to 13 years</li>
+			<li><span class="field__name">Skin type:</span> Hair</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Fennec Fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> Africa<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Lifespan:</strong> 10 - 14 years<br/>
-		<strong>Top speed:</strong> 25 mph<br/>
-		<strong>Skin type:</strong> Fur<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Africa</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Lifespan:</span> 10 - 14 years</li>
+			<li><span class="field__name">Top speed:</span> 25 mph</li>
+			<li><span class="field__name">Skin type:</span> Fur</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> Africa<br/>
-		<strong>Diet:</strong> Carnivore<br/>
-		<strong>Type:</strong> Mammal<br/>
-		<strong>Lifespan:</strong> 3 - 11 years<br/>
-		<strong>Top speed:</strong> 29 mph<br/>
-		<strong>Skin type:</strong> Fur<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Africa</li>
+			<li><span class="field__name">Diet:</span> Carnivore</li>
+			<li><span class="field__name">Type:</span> Mammal</li>
+			<li><span class="field__name">Lifespan:</span> 3 - 11 years</li>
+			<li><span class="field__name">Top speed:</span> 29 mph</li>
+			<li><span class="field__name">Skin type:</span> Fur</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Fox Snakes</div>
-	<p class="card__text">
-		<strong>Location:</strong> North-America<br/>
-		<strong>Diet:</strong> Carnivore<br/>
-		<strong>Lifespan:</strong> approximately 20 years<br/>
-		<strong>Skin type:</strong> Scales<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> North-America</li>
+			<li><span class="field__name">Diet:</span> Carnivore</li>
+			<li><span class="field__name">Lifespan:</span> approximately 20 years</li>
+			<li><span class="field__name">Skin type:</span> Scales</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Fox Squirrel</div>
-	<p class="card__text">
-		<strong>Location:</strong> Central-America<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Type:</strong> rodent<br/>
-		<strong>Lifespan:</strong> 6-12.6 years<br/>
-		<strong>Top speed:</strong> 17 mph<br/>
-		<strong>Skin type:</strong> Fur<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Central-America</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Type:</span> rodent</li>
+			<li><span class="field__name">Lifespan:</span> 6-12.6 years</li>
+			<li><span class="field__name">Top speed:</span> 17 mph</li>
+			<li><span class="field__name">Skin type:</span> Fur</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Fox Terrier</div>
-	<p class="card__text">
-		<strong>Location:</strong> Europe<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Lifespan:</strong> 14 years<br/>
-		<strong>Skin type:</strong> Hair<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Europe</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Lifespan:</span> 14 years</li>
+			<li><span class="field__name">Skin type:</span> Hair</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Golden-Crowned Flying Fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> Asia<br/>
-		<strong>Diet:</strong> Herbivore<br/>
-		<strong>Lifespan:</strong> unknown<br/>
-		<strong>Skin type:</strong> Hair<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Asia</li>
+			<li><span class="field__name">Diet:</span> Herbivore</li>
+			<li><span class="field__name">Lifespan:</span> unknown</li>
+			<li><span class="field__name">Skin type:</span> Hair</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Gray Fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> Central-America<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Type:</strong> Mammal<br/>
-		<strong>Lifespan:</strong> 6-12 years<br/>
-		<strong>Top speed:</strong> 28 mph<br/>
-		<strong>Skin type:</strong> Fur<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Central-America</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Type:</span> Mammal</li>
+			<li><span class="field__name">Lifespan:</span> 6-12 years</li>
+			<li><span class="field__name">Top speed:</span> 28 mph</li>
+			<li><span class="field__name">Skin type:</span> Fur</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Kit Fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> Central-America<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Type:</strong> mammal<br/>
-		<strong>Lifespan:</strong> seven years in the wild. 12 years in captivity<br/>
-		<strong>Top speed:</strong> 25 mph<br/>
-		<strong>Skin type:</strong> Fur<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Central-America</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Type:</span> mammal</li>
+			<li><span class="field__name">Lifespan:</span> seven years in the wild. 12 years in captivity</li>
+			<li><span class="field__name">Top speed:</span> 25 mph</li>
+			<li><span class="field__name">Skin type:</span> Fur</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Marble Fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> North-America<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Type:</strong> Mammal<br/>
-		<strong>Lifespan:</strong> Up to 15 years<br/>
-		<strong>Top speed:</strong> 30 mph<br/>
-		<strong>Skin type:</strong> Fur<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> North-America</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Type:</span> Mammal</li>
+			<li><span class="field__name">Lifespan:</span> Up to 15 years</li>
+			<li><span class="field__name">Top speed:</span> 30 mph</li>
+			<li><span class="field__name">Skin type:</span> Fur</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Red Fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> Africa<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Lifespan:</strong> 2-4 years in the wild, 10-12 in captivity<br/>
-		<strong>Top speed:</strong> 31 mph<br/>
-		<strong>Skin type:</strong> Hair<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Africa</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Lifespan:</span> 2-4 years in the wild, 10-12 in captivity</li>
+			<li><span class="field__name">Top speed:</span> 31 mph</li>
+			<li><span class="field__name">Skin type:</span> Hair</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Smooth Fox Terrier</div>
-	<p class="card__text">
-		<strong>Location:</strong> Europe<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Lifespan:</strong> 12 – 15 years<br/>
-		<strong>Skin type:</strong> Hair<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Europe</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Lifespan:</span> 12 – 15 years</li>
+			<li><span class="field__name">Skin type:</span> Hair</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Tibetan Fox</div>
-	<p class="card__text">
-		<strong>Location:</strong> Asia<br/>
-		<strong>Diet:</strong> Carnivore<br/>
-		<strong>Type:</strong> Mammal<br/>
-		<strong>Lifespan:</strong> 8-10 years<br/>
-		<strong>Top speed:</strong> 44 mph<br/>
-		<strong>Skin type:</strong> Fur<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Asia</li>
+			<li><span class="field__name">Diet:</span> Carnivore</li>
+			<li><span class="field__name">Type:</span> Mammal</li>
+			<li><span class="field__name">Lifespan:</span> 8-10 years</li>
+			<li><span class="field__name">Top speed:</span> 44 mph</li>
+			<li><span class="field__name">Skin type:</span> Fur</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Toy Fox Terrier</div>
-	<p class="card__text">
-		<strong>Location:</strong> North-America<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Lifespan:</strong> 11-14 years<br/>
-		<strong>Skin type:</strong> Hair<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> North-America</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Lifespan:</span> 11-14 years</li>
+			<li><span class="field__name">Skin type:</span> Hair</li>
+		</ul>
 	</p>
 </li>
 <li class="cards__item">
 	<div class="card__title">Wire Fox Terrier</div>
-	<p class="card__text">
-		<strong>Location:</strong> Europe<br/>
-		<strong>Diet:</strong> Omnivore<br/>
-		<strong>Lifespan:</strong> 13 – 14 years<br/>
-		<strong>Skin type:</strong> Hair<br/>
+	<p>
+		<ul>
+			<li><span class="field__name">Location:</span> Europe</li>
+			<li><span class="field__name">Diet:</span> Omnivore</li>
+			<li><span class="field__name">Lifespan:</span> 13 – 14 years</li>
+			<li><span class="field__name">Skin type:</span> Hair</li>
+		</ul>
 	</p>
 </li>
 
