@@ -27,7 +27,8 @@ def serialize_animal(animal):
 
     for feature, info in animal_features.items():
         if info is not None:
-            output += f"\t\t\t<li><span class=\"field__name\">{feature}:</span> {info}</li>\n"
+            output += (f"\t\t\t<li><span class=\"field__name\""
+                       f">{feature}:</span> {info}</li>\n")
 
     output += f"\t\t</ul>\n"
     output += "\t</p>\n"
@@ -54,7 +55,8 @@ with open("animals_template.html", "r") as file:
 
 
 # Replace placeholder in template with animal data
-html_new_content = html_content.replace("__REPLACE_ANIMALS_INFO__", animal_data(animals_data))
+html_new_content = html_content.replace("__REPLACE_ANIMALS_INFO__",
+                                        animal_data(animals_data))
 
 
 # Write new HTML content to a file
