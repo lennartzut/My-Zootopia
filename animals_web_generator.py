@@ -17,14 +17,16 @@ def fox_data(data):
         fox_location = fox.get("locations")[0]
         fox_diet = fox.get("characteristics", {}).get("diet")
         fox_type = fox.get("characteristics", {}).get("type")
+        fox_data_string += "<li class=\"cards__item\">"
         if fox_name is not None:
-            fox_data_string += f"Name: {fox_name}\n"
+            fox_data_string += f"Name: {fox_name}<br/>\n"
         if fox_diet is not None:
-            fox_data_string += f"Diet: {fox_diet}\n"
+            fox_data_string += f"Diet: {fox_diet}<br/>\n"
         if fox_location is not None:
-            fox_data_string += f"Location: {fox_location}\n"
+            fox_data_string += f"Location: {fox_location}<br/>\n"
         if fox_type is not None:
-            fox_data_string += f"Type: {fox_type}\n"
+            fox_data_string += f"Type: {fox_type}<br/>\n"
+        fox_data_string += "</li>"
         fox_data_string += "\n"
     return(fox_data_string)
 
