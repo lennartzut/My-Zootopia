@@ -45,20 +45,16 @@ def animal_data(data):
     return output
 
 
-# Load data from JSON file
-animals_data = load_data("animals_data.json")
+def main():
+    """Main function to run the program"""
+    animals_data = load_data("animals_data.json")
+    with open("animals_template.html", "r") as file:
+        html_content = file.read()
+    html_new_content = (html_content.replace(
+        "__REPLACE_ANIMALS_INFO__", animal_data(animals_data)))
+    with open("animals.html", "w") as file:
+        file.write(html_new_content)
 
 
-# Reads local HTML file
-with open("animals_template.html", "r") as file:
-    html_content = file.read()
-
-
-# Replace placeholder in template with animal data
-html_new_content = html_content.replace("__REPLACE_ANIMALS_INFO__",
-                                        animal_data(animals_data))
-
-
-# Write new HTML content to a file
-with open("animals.html", "w") as file:
-    file.write(html_new_content)
+if __name__ == "__main__":
+    main()
