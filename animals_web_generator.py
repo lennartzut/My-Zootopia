@@ -1,27 +1,5 @@
 import json
-import requests
-
-API_KEY = "HedPHbPSZtALl0SQRFp4fQ==qOKjRD7GpmnbzRsl"
-
-
-def get_animal_data_from_api(animal_name):
-    """
-    Fetches animal data from the API using the provided animal
-    name
-    """
-    api_url = (f"https://api.api-ninjas.com/v1/animals?name="
-               f"{animal_name}")
-    headers = {"X-Api-Key": API_KEY}
-    try:
-        response = requests.get(api_url, headers=headers)
-        if response.status_code == requests.codes.ok:
-            return response.json()
-        else:
-            print("Error:", response.status_code, response.json())
-            return None
-    except requests.exceptions.RequestException as e:
-        print("Error:", e)
-        return None
+import data_fetcher
 
 
 def load_data(file_path):
@@ -76,7 +54,7 @@ def main():
     """Main function to run the program"""
     while True:
         animal_name = input(f"Enter a nam of an animal: ")
-        animals_data = get_animal_data_from_api(animal_name)
+        animals_data = data_fetcher.fetch_data(animal_name)
         if animal_name:
             with open("animals_template.html", "r") as file:
                 html_content = file.read()
