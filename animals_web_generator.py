@@ -74,15 +74,25 @@ def animal_data(data):
 
 def main():
     """Main function to run the program"""
-    animal_name = "Bear"
-    animals_data = get_animal_data_from_api(animal_name)
-    if animals_data:
-        with open("animals_template.html", "r") as file:
-            html_content = file.read()
-        html_new_content = (html_content.replace(
-            "__REPLACE_ANIMALS_INFO__", animal_data(animals_data)))
-        with open("animals.html", "w") as file:
-            file.write(html_new_content)
+    while True:
+        animal_name = input(f"Enter a nam of an animal: ")
+        animals_data = get_animal_data_from_api(animal_name)
+        if animal_name:
+            with open("animals_template.html", "r") as file:
+                html_content = file.read()
+            if animals_data:
+                html_new_content = (html_content.replace(
+                    "__REPLACE_ANIMALS_INFO__", animal_data(
+                        animals_data)))
+            else:
+                html_new_content = (html_content.replace(
+                    "__REPLACE_ANIMALS_INFO__", f"<h2>The animal "
+                                                f"\"{animal_name}\" "
+                                                f"doesn't "
+                                                f"exist.</h2>"))
+            with open("animals.html", "w") as file:
+                file.write(html_new_content)
+            break
 
 
 if __name__ == "__main__":
