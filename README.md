@@ -15,7 +15,7 @@ fetch and display information about various animals from an API and generate an 
 1. **Clone the repository:**
 
     ```bash
-    git clone git@github.com:lennartzut/My-Zootopia.git
+    git clone https://github.com/lennartzut/My-Zootopia.git
     ```
 
 2. **Install the required packages:**
